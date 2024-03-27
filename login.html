@@ -1,0 +1,53 @@
+  <!DOCTYPE html>
+  <html>
+  
+  <head>
+    <link rel="stylesheet" href="style.css">
+  
+    <title>Home Login</title>
+  </head>
+  
+  <body>
+    <form name="loginForm" method="post" action="index.html">
+      <table width="20%" align="center">
+  
+        <tr>
+          <td colspan=2>
+            <center>
+              <font size=4><b>Login to Kalkulator By Raditya</b></font>
+            </center>
+          </td>
+        </tr>
+  
+        <tr>
+          <td>Username:</td>
+          <td><input type="text" size=25 name="userid"></td>
+        </tr>
+  
+        <tr>
+          <td>Password:</td>
+          <td><input type="Password" size=25 name="pwd"></td>
+        </tr>
+  
+        <tr>
+          <td><input type="Reset"></td>
+          <td><input type="submit" onclick="return check(this.form)" value="Login"></td>
+        </tr>
+  
+      </table>
+    </form>
+    <script>function check(form) {
+        if (form.userid.value == "adit" && form.pwd.value == "adit123") {
+          window.location.href = "index.html";
+        } else {
+          alert("Maaf, Username atau Password Salah!")
+          return false;
+        }
+      }</script>
+  
+  
+  </body>
+  
+  
+  
+  </html>
